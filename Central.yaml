@@ -9,11 +9,6 @@ spec:
       enabled: true
   central:
 
-    declarativeConfiguration:
-      configMaps:
-        - declarative-configs
-      secrets:
-        - sensitive-declarative-configs
 
     notifierSecretsEncryption:
       enabled: false
