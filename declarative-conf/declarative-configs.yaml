@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+  permission-set.yaml: |
+    name: restricted
+    description: Restriction permission set that only allows access to Administration and Access resources
+    resources:
+        - resource: Access
+          access: READ_ACCESS
+        - resource: Administration
+          access: READ_WRITE_ACCESS
+  role.yaml: |
+    name: restricted
+    description: Restricted role that only allows access to Administration and Access
+    accessScope: Unrestricted
+    permissionSet: restricted
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-03-08T08:38:35Z"
+  name: declarative-configurations
+  namespace: stackrox
+  resourceVersion: "1264290"
+  uid: 9a478d91-bd15-4baf-9ce1-168055ffb268

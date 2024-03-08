@@ -8,8 +8,9 @@ spec:
     openshift:
       enabled: true
   central:
-
-
+    declarativeConfiguration:
+      configMaps:
+      - name: declarative-configs.yaml
     notifierSecretsEncryption:
       enabled: false
     exposure:

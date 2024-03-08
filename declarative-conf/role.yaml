@@ -1,0 +1,4 @@
+name: restricted
+description: Restricted role that only allows access to Administration and Access
+accessScope: Unrestricted
+permissionSet: restricted

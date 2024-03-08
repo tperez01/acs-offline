@@ -1,0 +1,7 @@
+name: restricted
+description: Restriction permission set that only allows access to Administration and Access resources
+resources:
+    - resource: Access
+      access: READ_ACCESS
+    - resource: Administration
+      access: READ_WRITE_ACCESS
