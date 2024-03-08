@@ -1,0 +1,15 @@
+name: my-authprovider
+minimumRole: Analyst 
+uiEndpoint: central.custom-domain.com:443 
+extraUIEndpoints: 
+    - central-alt.custom-domain.com:443
+groups: 
+    - key: email 
+      value: example@example.com
+      role: Admin 
+    - key: groups
+      value: reviewers
+      role: Analyst
+requiredAttributes: 
+    - key: org_id
+      value: "12345"

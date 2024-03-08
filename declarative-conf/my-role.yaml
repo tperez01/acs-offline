@@ -1,0 +1,4 @@
+name: my-role
+description: A sample role created declaratively
+permissionSet: my-permissionset 
+accessScope: Unrestricted

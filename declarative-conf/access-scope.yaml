@@ -1,0 +1,16 @@
+name: access-scope
+description: A sample access scope created declaratively
+rules:
+    included:
+        - cluster: secured-cluster-A 
+          namespaces:
+            - namespaceA
+        - cluster: secured-cluster-B 
+    clusterLabelSelectors:
+        - requirements:
+            key: kubernetes.io/metadata.name
+            operator: IN 
+            values:
+            - production
+            - staging
+            - environment

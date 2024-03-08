@@ -1,0 +1,7 @@
+name: my-permissionset
+description: A sample permission set created declaratively
+resources:
+- resource: Integration 
+  access: READ_ACCESS  
+- resource: Administration
+  access: READ_WRITE_ACCESS
